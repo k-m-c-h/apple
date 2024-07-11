@@ -1,0 +1,37 @@
+[debug] [2024-07-11T06:14:59.608Z] ----------------------------------------------------------------------
+[debug] [2024-07-11T06:14:59.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\skyi1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-07-11T06:14:59.612Z] CLI Version:   13.13.1
+[debug] [2024-07-11T06:14:59.612Z] Platform:      win32
+[debug] [2024-07-11T06:14:59.613Z] Node Version:  v20.15.1
+[debug] [2024-07-11T06:14:59.613Z] Time:          Thu Jul 11 2024 15:14:59 GMT+0900 (대한민국 표준시)
+[debug] [2024-07-11T06:14:59.613Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-11T06:14:59.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-11T06:14:59.756Z] > authorizing via signed-in user (skyi1029@gmail.com)
+[debug] [2024-07-11T06:14:59.756Z] [iam] checking project test-72370 for permissions ["firebase.projects.get"]
+[debug] [2024-07-11T06:14:59.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-72370:testIamPermissions [none]
+[debug] [2024-07-11T06:14:59.758Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-72370:testIamPermissions x-goog-quota-user=projects/test-72370
+[debug] [2024-07-11T06:14:59.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-72370:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-11T06:15:00.594Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-72370:testIamPermissions 200
+[debug] [2024-07-11T06:15:00.594Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-72370:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-11T06:15:00.595Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 [none]
+[debug] [2024-07-11T06:15:00.991Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 200
+[debug] [2024-07-11T06:15:00.991Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 {"projectId":"test-72370","projectNumber":"602938943132","displayName":"test","name":"projects/test-72370","resources":{"hostingSite":"test-72370","realtimeDatabaseInstance":"test-72370-default-rtdb","storageBucket":"test-72370.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE","etag":"1_f28ed305-4008-450e-8fa1-dd0066d22f46"}
+[info] 
+[info] === Serving from 'C:\Users\skyi1\Desktop\apple'...
+[info] 
+[debug] [2024-07-11T06:15:00.997Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-72370/sites 
+[debug] [2024-07-11T06:15:01.699Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-72370/sites 200
+[debug] [2024-07-11T06:15:01.699Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-72370/sites {"sites":[{"name":"projects/test-72370/sites/test-72370","defaultUrl":"https://test-72370.web.app","appId":"1:602938943132:web:f4b4c4b7d85d375a592f59","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-11T06:15:01.700Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-72370/webApps/1:602938943132:web:f4b4c4b7d85d375a592f59/config [none]
+[debug] [2024-07-11T06:15:02.708Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-72370/webApps/1:602938943132:web:f4b4c4b7d85d375a592f59/config 200
+[debug] [2024-07-11T06:15:02.709Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-72370/webApps/1:602938943132:web:f4b4c4b7d85d375a592f59/config {"projectId":"test-72370","appId":"1:602938943132:web:f4b4c4b7d85d375a592f59","databaseURL":"https://test-72370-default-rtdb.firebaseio.com","storageBucket":"test-72370.appspot.com","locationId":"asia-northeast3","apiKey":"AIzaSyAF7oV1RaVOWBKLtXSYqgNp5KgbFEIScNc","authDomain":"test-72370.firebaseapp.com","messagingSenderId":"602938943132"}
+[debug] [2024-07-11T06:15:02.725Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 [none]
+[debug] [2024-07-11T06:15:03.132Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 200
+[debug] [2024-07-11T06:15:03.133Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-72370 {"projectId":"test-72370","projectNumber":"602938943132","displayName":"test","name":"projects/test-72370","resources":{"hostingSite":"test-72370","realtimeDatabaseInstance":"test-72370-default-rtdb","storageBucket":"test-72370.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE","etag":"1_f28ed305-4008-450e-8fa1-dd0066d22f46"}
+[info] i  hosting[test-72370]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[test-72370]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [11/Jul/2024:06:15:06 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Jul/2024:06:15:06 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0\""}}
+[info] i  hosting: ::1 - - [11/Jul/2024:06:15:06 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Jul/2024:06:15:06 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0\""}}
+[info] i  hosting: ::1 - - [11/Jul/2024:06:15:06 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Jul/2024:06:15:06 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0\""}}
+[info] i  hosting: ::1 - - [11/Jul/2024:06:15:22 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Jul/2024:06:15:22 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0\""}}
